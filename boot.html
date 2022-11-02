@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0+++++++++++++" />
+    <title>Bootstrap demo</title>
+    <!--CSS BOOTSTRAP LINK-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+     
+    <!--FONTAWESOME LINK-->
+    <script src="https://kit.fontawesome.com/c8161b87ab.js" crossorigin="anonymous"></script>
+
+
+    <!--GOOGLE-FONTS LINK-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Oswald:wght@500&family=Rubik:ital@0;1&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--CSS LINK-->
+    <link rel="stylesheet" href="boot.css" />
+
+    <!--FONT-AWESOME LINK-->
+    <script
+      src="https://kit.fontawesome.com/c8161b87ab.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Google-Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:ital@0;1&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section id="first-page">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light navbar">
+        <div class="container-fluid">
+          <i class="fa-solid fa-code-compare fa-2xl"></i>
+          <a class="navbar-brand logo" href="#">Navigate</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Offers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  My Profile
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">My Trips</a></li>
+                  <li><a class="dropdown-item" href="#">My Payment</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li><a class="dropdown-item" href="#">Make a payment</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-dark search-btn-1" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--PAGE-ONE-->
+
+      <div class="container-xxl container page-one-container">
+        <div class="form-check" style="padding-top: 70px">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="flexRadioDefault"
+            id="flexRadioDefault1"
+          />
+          <label
+            class="form-check-label"
+            for="flexRadioDefault1"
+            style="
+              color: black;
+              font-family: 'Rubik' sans-serif;
+              font-size: 1.2rem;
+            "
+          >
+            India
+          </label>
+        </div>
+
+        <input
+          class="form-check-input"
+          type="radio"
+          name="flexRadioDefault"
+          id="flexRadioDefault2"
+          checked
+        />
+        <label
+          class="form-check-label"
+          for="flexRadioDefault2"
+          style="
+            color: black;
+            font-family: 'Rubik' sans-serif;
+            font-size: 1.2rem;
+          "
+        >
+          International
+        </label>
+
+        <h5 class="where">Where</h5>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2 w-35"
+            type="search"
+            placeholder="e.g. - Area, Landmark or Property Name"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-dark search-btn-1" type="submit">Search</button>
+        </form>
+
+        <h5 class="check-in">Check-in</h5>
+        <form action="action_page.php w-45" style="margin-left: 10px">
+          <input type="date" id="check-in" name="check-in" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <h5 class="check-out">Check-out</h5>
+        <form action="action_page.php w-45" style="margin-left: 250px">
+          <input type="date" id="check-out" name="check-out" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <div class="offer1">
+          <img class="offer1-img" src="offer1.png" alt="" />
+          <h5 class="offer1-h5">Save 15% with Late Escape Deals</h5>
+          <h5 class="offer1-h5-2">
+            Tick one more destination off your wishlist
+          </h5>
+          <button type="button" class="btn btn-primary btn-lg offer1-btn">
+            Explore Deals
+          </button>
+        </div>
+
+        <div class="offer1">
+          <img class="offer2-img" src="offer2.png" alt="" />
+          <h5 class="offer2-h5">Escape for a while</h5>
+          <h5 class="offer2-h5-2">
+            Enjoy the freedom of a monthly stay on <br />
+            Booking.com
+          </h5>
+          <button type="button" class="btn btn-primary btn-lg offer2-btn">
+            Discover monthly stays
+          </button>
+        </div>
+       
+        <!--DROPDOWN-SELECTION-->
+        <div class="dropdown">
+          <button style="" class="btn btn-secondary dropdown-toggle book-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Rooms & Guests
+          </button>
+          <ul class="dropdown-menu">
+
+            <!--FIRST-ADULT-SET-->
+            <li>
+              <p style="padding-left: 10px; font-family:'Oswald', sans-serif;">ADULTS</p>
+              <button id="minus"><i class="fa-solid fa-minus"></i></button>
+              <input type="number" value="0" id="input"/>
+              <button id="plus"><i class="fa-solid fa-plus"></i></button></li>
+
+
+            <li> <p style="padding-left: 10px;color: black; font-family:'Oswald', sans-serif;margin-top: 16px;margin-bottom: 3px;">Children</p>
+              <button id="minus"><i class="fa-solid fa-minus"></i></button>
+              <input type="number" value="0" id="input"/>
+              <button id="plus"><i class="fa-solid fa-plus"></i></button></li>
+
+            <li> <p style="padding-left: 10px; font-family:'Oswald', sans-serif;margin-top: 16px;margin-bottom: 3px;">Rooms</p>
+              <button id="minus"><i class="fa-solid fa-minus"></i></button>
+              <input type="number" value="0" id="input"/>
+              <button id="plus"><i class="fa-solid fa-plus"></i></button></li>
+
+          </ul>
+        </div>
+
+
+      </div>
+      
+    </section>
+
+    <!--PAGE-TWO-->
+    <section id="page-two">
+      <h3>These top destinations are one click away</h3>
+
+      <!--IMAGE-ONE-->
+      <div class="page2">
+        <img
+          class="page-2-img-1"
+          src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/98/64981_v33.jpeg"
+          alt=""
+        />
+        <a href=""><h5 class="Page-2-h5-1">Hotels in Mumbai</h5></a>
+        <a href=""
+          ><p class="Page-2-p-1">
+            9,933 Hotels <strong>Avg. ₹3,280</strong>
+          </p></a
+        >
+      </div>
+
+      <!--IMAGE-TWO-->
+      <div class="page2">
+        <img
+          class="page-2-img-2"
+          src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/73/91/73918_v39.jpeg"
+          alt=""
+        />
+        <a href=""><h5 class="Page-2-h5-2">Hotels in Delhi</h5></a>
+        <a href=""
+          ><p class="Page-2-p-2">
+            18,561 Hotels <strong>Avg. ₹2,489</strong>
+          </p></a
+        >
+      </div>
+
+      <!--IMAGE-THREE-->
+      <div class="page2">
+        <img
+          class="page-2-img-3"
+          src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/15/07/15075_v24.jpeg"
+          alt=""
+        />
+        <a href=""><h5 class="Page-2-h5-3">Hotels in Jaipur</h5></a>
+        <a href=""
+          ><p class="Page-2-p-3">
+            7,747 Hotels <strong>Avg. ₹3,218</strong>
+          </p></a
+        >
+      </div>
+
+      <!--IMAGE-FOUR-->
+      <div class="page2">
+        <img
+          class="page-2-img-4"
+          src="https://imgcy.trivago.com/c_fill,d_dummy.jpeg,e_sharpen:60,f_auto,h_258,q_auto,w_258/categoryimages/64/96/64967_v41.jpeg"
+          alt=""
+        />
+        <a href=""><h5 class="Page-2-h5-4">Hotels in Udaipur</h5></a>
+        <a href=""
+          ><p class="Page-2-p-4">
+            4,277 Hotels <strong>Avg. ₹4,083</strong>
+          </p></a
+        >
+      </div>
+    </section>
+
+    <!--PAGE-THREE-->
+    <section id="page-three">
+      <h3 class="page-3-h3">Search for places to stay by destination</h3>
+      <p class="page-3-p">Find Accommodation</p>
+
+      <div class="container text-center">
+        <div class="row">
+          <!--SET-1-->
+
+          <div class="col">
+            <a class="set-1" href="">New Delhi hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Bengaluru hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Chennai hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Bangkok hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Kolkata hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Kochi hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-1" href="">Udaipur hotels</a>
+            <br />
+          </div>
+
+          <!--SET-2-->
+          <div class="col">
+            <a class="set-2" href="">Mumbai hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">New York hotels </a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">Hyderabad hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">Pune hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">Puri hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">Singapore hotels</a>
+            <br />
+            <hr style="color: white" />
+            <a class="set-2" href="">Candolim hotels</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--PAGE-FOUR-->
+    <section id="about">
+      <div class="about">
+        <h3 class="about-h3-1">Find cheap hotels on Navigate</h3>
+        <p class="about-p-1">
+          With navigate you can easily find your ideal hotel and compare prices
+          from
+          <br />
+          different websites. Simply enter where you want to go and your desired
+          <br />
+          travel dates, and let our hotel search engine compare accommodation
+          <br />
+          prices for you. To refine your search results, simply filter by price,
+          distance
+          <br />
+          (e.g. from the beach), star category, facilities and more. From budget
+          <br />
+          hostels to luxury suites, trivago makes it easy to book online. You
+          can
+          <br />
+          search from a large variety of rooms and locations across India, like
+          Shimla
+          <br />
+          and Jaipur to popular cities and holiday destinations abroad!
+        </p>
+      </div>
+
+      <div class="reviews">
+        <h3 class="reviews-h3-1">
+          Hotel reviews help you find your ideal hotel
+        </h3>
+        <p class="reviews-p-1">
+          Over 175 million aggregated hotel ratings and more than 19 million
+          images
+          <br />
+          allow you to find out more about where you're travelling. To get an
+          <br />
+          extended overview of a hotel property, trivago shows the average
+          rating
+          <br />
+          and extensive reviews from other booking sites, e.g. Hotels.com,
+          Expedia,
+          <br />
+          Agoda, leading hotels, etc. trivago makes it easy for you to find
+          information
+          <br />
+          about your trip to Dubai, including the ideal hotel for you.
+          <br />
+          Over 175 million aggregated hotel ratings and more than 19 million
+          images
+          <br />
+          allow you to find out more about where you're travelling.
+        </p>
+      </div>
+
+
+      <div class="hotel-chains">
+        <h3 class="hotel-chains-h3">Top Hotel Chains</h3>
+        <p class="hotel-chains-p">EaseMyTrip has a wide range of luxury and budget-friendly
+          <br>
+          hotel chain properties. We have picked the finest hotels in
+          <br>
+          India with world-class amenities. We bring you not only a 
+          <br>
+          stay option, but an experience in your budget to enjoy the 
+          <br>
+          luxury. We make sure that all the hotels are safe, hygienic,
+          <br>
+          comfortable, and easily approachable when it comes to location. 
+          <br>
+          Book your hotel with EaseMyTrip and don't forget to grab an 
+          <br>
+          amazing hotel deal to save huge on your stay.</p>
+      </div>
+
+      <div class="booking">
+        <h3 class="booking-h3">How to book</h3>
+        <p class="booking-p">
+          trivago is a hotel search with an extensive price comparison. The prices 
+          <br>
+          shown come from numerous hotels and booking websites. This means that
+          <br>
+          while users decide on trivago which hotel best suits their needs, the 
+          <br>
+          booking process itself is completed through the booking sites (which are
+          <br>
+           linked to our website). By clicking on the “view deal” button, you will be
+           <br>
+           forwarded onto a booking site where you can complete the reservation for 
+           <br>
+           the hotel deal found on trivago</p>
+      </div>
+    </section>
+
+    <section id="footer">
+      <div class="footer">
+        <h3>Want to receive exclusive hotel offers? Subscribe to our newsletter!</h3>
+
+        <div  class="input-group mb-1 footer-btn ">
+          <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn btn-outline-secondary footer-btn-2" type="button" id="button-addon2">Submit</button>
+        </div>
+        <a href=""><i class="fa-brands fa-instagram fa-xl"></i></a>
+        <a href=""><i class="fa-brands fa-facebook fa-xl"></i></a>
+        <a href=""><i class="fa-brands fa-youtube fa-xl"></i></a>
+        <a href=""><i class="fa-brands fa-twitter fa-xl"></i></a>
+        <a href=""><i class="fa-brands fa-google-plus-g fa-xl"></i></a>
+
+        <h4>Navigate</h4>
+        <p>Copyright 2022 NAVIGATE | All rights reserved.</p>
+       </div>
+    </section>
+
+    <!--JAVASCRIPT BOOTSTRAP LINK-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--JAVASCRIPT LINK-->
+    <script src="boot.js"></script>
+  </body>
+</html>
